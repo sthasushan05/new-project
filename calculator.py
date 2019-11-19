@@ -1,6 +1,6 @@
 import calendar
 import sys
-name=input("enter your name\n")
+'''name=input("enter your name\n")
 for x in range(1,9):
     if name.isalpha()==True or ' ' in name:
         if len(name)>=3:
@@ -23,13 +23,11 @@ while len(mob_no)!=10:
         mob_no=input("enter your number\n")
     else:
         print("invalid")
-        mob_no=input("enter the number")
+        mob_no=input("enter the number")'''
 #calculator
 
 def calculator():
-    sum=number_1+number_2
-    print('{} + {} = '.format(number_1, number_2), number_1 + number_2)
-    return sum
+    return('{} + {} = '.format(number_1, number_2), number_1 + number_2)
 
 print("choose the number of the operataon you want\n1.addition\n2.subtraction\n3.division\n4.multiplication\n5.square\n6.cube\n7.square root\n8.cube root\n9.calander")
 select=int(input("select the number: \n"))
@@ -38,12 +36,7 @@ while select ==0:
     if(int(select==1)):
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-        print('{} + {} = '.format(number_1, number_2),number_1 + number_2)
-        choice=int(input("1.menu\n2.exit"))
-        if choice==1:
-            calculator()
-        else:
-            sys.exit("thanks for using")
+
     elif(int(select==2)):
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))

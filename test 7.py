@@ -18,11 +18,12 @@ print("fuck off",power)'''
 
 
 #armstrong number
-'''def a_strong(a):
+def a_strong(a):
+    power=len(str(a))
     sum=0
     while a>0:
         num=a%10
-        sum=sum+num**3
+        sum=sum+num**power
         a//=10
     return sum
 
@@ -33,7 +34,7 @@ goat=a_strong(strong)
 if goat==strong:
     print("hello world")
 else:
-    print("fuck off")'''
+    print("fuck off")
 
 
 #palindrome
